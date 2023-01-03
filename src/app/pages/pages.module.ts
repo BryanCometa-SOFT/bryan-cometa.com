@@ -11,11 +11,6 @@ import { ComponentsModule } from '../components/components.module';
 import { PagesRoutingModule } from './pages-routing.module';
 
 /**
- * Material
- **/
-import { MaterialModule } from '../material/material.module';
-
-/**
  * Components
  **/
 import { LoginComponent } from './auth/login/login.component';
@@ -31,7 +26,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     PagesRoutingModule,
     ComponentsModule,
-    MaterialModule,
     ReactiveFormsModule
   ]
 })
