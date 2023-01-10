@@ -1,0 +1,33 @@
+.button{
+    height: 45px;
+    border-width: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 1.2rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+}
+
+.purple{
+    background-color: transparent;
+    border-color: #6E07F3;
+    color: #6E07F3;
+}
+
+.purple:hover{
+    color: #ffffff;
+    background-color: #6E07F3;
+}
+
+.normal{
+    background-color: transparent;
+    color: #141c3a;
+    border-color: transparent;
+}
+
+.normal:hover{
+    color: #6E07F3;
+}
+
+

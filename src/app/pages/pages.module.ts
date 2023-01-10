@@ -4,23 +4,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '../components/components.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 /**
  * Routing
  **/
 import { PagesRoutingModule } from './pages-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './admin/login/login.component';
+import { ContactRequestComponent } from './admin/contact-request/contact-request.component';
 
 /**
  * Components
  **/
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    LoginComponent,
-    RegisterComponent,
+  
+    HomeComponent,
+       ContactComponent,
+       LoginComponent,
+       ContactRequestComponent
   ],
   imports: [
     CommonModule,

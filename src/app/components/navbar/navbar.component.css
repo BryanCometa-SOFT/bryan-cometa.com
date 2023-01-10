@@ -1,0 +1,13 @@
+
+
+.icon{
+    height: 126px;
+}
+
+
+
+@media (max-width: 600px) {
+    .icon{
+        height: 84px;
+    }
+  }
