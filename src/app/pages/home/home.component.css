@@ -123,4 +123,6 @@
 
 .imgWeb{
     width: 100%;
+    max-width: 406px;
+    height: 258PX;
 }

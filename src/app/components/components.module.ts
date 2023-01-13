@@ -11,6 +11,7 @@ import { TableComponent } from './table/table.component';
 import { ButtonComponent } from './button/button.component';
 import { LogoContainerComponent } from './logo-container/logo-container.component';
 import { CardBriefcaseComponent } from './card-briefcase/card-briefcase.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CardBriefcaseComponent } from './card-briefcase/card-briefcase.componen
     TableComponent,
     ButtonComponent,
     LogoContainerComponent,
-    CardBriefcaseComponent
+    CardBriefcaseComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { CardBriefcaseComponent } from './card-briefcase/card-briefcase.componen
   exports: [
     NavbarComponent,
     TableComponent,
-    ButtonComponent
+    ButtonComponent,
+    FooterComponent
   ]
 })
 export class ComponentsModule { }

@@ -22,11 +22,28 @@
     background-color: #6E07F3;
 }
 
+.black{
+    color: #ffffff;
+    background-color: #141c3a;
+    border: solid 2px;
+   
+}
+
+.black:hover{
+    background-color: transparent;
+    border-color: #141c3a;
+    color: #141c3a;
+    border: solid 2px;
+}
+
 .normal{
     background-color: transparent;
     color: #141c3a;
     border-color: transparent;
 }
+
+
+
 
 .normal:hover{
     color: #6E07F3;

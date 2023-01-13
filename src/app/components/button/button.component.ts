@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ButtonComponent {
 
   @Input() title: String;
-  @Input() type: "purple" | "normal";
+  @Input() type: "purple" | "normal" | "black";
   @Input() disabled: boolean;
   @Input() isLink: boolean;
   @Input() urlLink: String;
