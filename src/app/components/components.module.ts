@@ -9,13 +9,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TableComponent } from './table/table.component';
 import { ButtonComponent } from './button/button.component';
+import { LogoContainerComponent } from './logo-container/logo-container.component';
+import { CardBriefcaseComponent } from './card-briefcase/card-briefcase.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     TableComponent,
-    ButtonComponent
+    ButtonComponent,
+    LogoContainerComponent,
+    CardBriefcaseComponent
   ],
   imports: [
     CommonModule,
