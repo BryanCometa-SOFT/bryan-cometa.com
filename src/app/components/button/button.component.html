@@ -1,5 +1,8 @@
 <div *ngIf="title">
-    <button type="button" class="button" [ngClass]="type" (click)="outputClick.emit(true)" [disabled]="disabled">
+    <button *ngIf="!isLink" type="button" class="button" [ngClass]="type" (click)="outputClick.emit(true)" [disabled]="disabled">
         {{title}}
     </button>
+    <a *ngIf="isLink" href="" class="button" [ngClass]="type" [href]="urlLink">
+        {{title}}
+    </a>
 </div>

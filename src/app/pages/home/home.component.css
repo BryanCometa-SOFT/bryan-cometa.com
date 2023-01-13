@@ -43,7 +43,7 @@
     padding-top: 12rem;
     height: 612px;
     width: 100%;
-    background: linear-gradient(#6E07F3, #6a05eeb2);
+    background: linear-gradient(#6E07F3, #6a05ee67);
 }
 
 .subtitle-section{
@@ -91,4 +91,36 @@
 .icon-card{
     width: 60px;
     height: 60px;
+}
+
+@media (max-width: 600px) {
+    .frontPage{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.logo-tecnologia{
+    width: 120px;
+    height: 95px;
+    margin: 2px;
+}
+
+.contenedor-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herramienta-card-estilo{
+    background: linear-gradient(#6E07F3, #6d07f365);
+}
+
+.hrEstilo{
+    margin-top: 100px;
+    margin-bottom: 50px ;
+}
+
+.imgWeb{
+    width: 100%;
 }

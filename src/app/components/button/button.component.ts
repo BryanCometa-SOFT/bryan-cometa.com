@@ -10,6 +10,9 @@ export class ButtonComponent {
   @Input() title: String;
   @Input() type: "purple" | "normal";
   @Input() disabled: boolean;
+  @Input() isLink: boolean;
+  @Input() urlLink: String;
+
 
   @Output() outputClick: EventEmitter<boolean>;
 
@@ -17,6 +20,8 @@ export class ButtonComponent {
     this.title = "";
     this.type = "purple";
     this.disabled = false;
+    this.isLink = false;
+    this.urlLink = "";
     
     this.outputClick = new EventEmitter<boolean>();
   }

@@ -1,10 +1,6 @@
 .page-full{
     min-height: 100vh;
 }
-.container{
-    padding: 20px 0px;
-    width: 80%;
-}
 
 .page{
     display: flex;
