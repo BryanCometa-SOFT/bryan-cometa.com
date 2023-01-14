@@ -33,3 +33,18 @@
     color: #6E07F3;
     background-color: white;
 }
+
+@media (max-width: 959px) {
+    .logo{
+        height: 70px;
+    }
+
+    .text-subtitulo-footer{
+        font-size: 1.10rem;
+    }
+
+    .footer{
+        height: 450px;
+      
+    }
+}

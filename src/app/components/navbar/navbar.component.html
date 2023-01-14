@@ -1,6 +1,9 @@
 <nav class="navbar navbar-white navbar-expand-lg bg-white">
     <div class="container-fluid">
-      <img src="assets/img/Logo-Bryan-Negro-removebg-preview.png" class="icon">
+      <a href="/home">
+        <img src="assets/img/Logo-Bryan-Negro-removebg-preview.png" class="icon">
+      </a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,7 +13,8 @@
         <app-button title="Sobre mí" type="normal" [isLink]="true" urlLink="#sobremi"></app-button>
         <app-button title="Portafolio" type="normal" [isLink]="true" urlLink="#portafolio"></app-button>
         <app-button title="Redes Sociales" type="normal" [isLink]="true" urlLink="#redes"></app-button>
-        <app-button title="Contactame" [isLink]="true" urlLink="/contacto"></app-button>
+        <app-button class="d-block d-lg-none" title="Contactame" type="normal" [isLink]="true" urlLink="/contacto"></app-button>
+        <app-button class="d-none d-lg-block" title="Contactame" [isLink]="true" urlLink="/contacto"></app-button>
       </div>
     </div>
   </nav>
