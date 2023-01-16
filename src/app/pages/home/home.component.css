@@ -120,6 +120,16 @@
     height: 258PX;
 }
 
+.estilo-form{
+    border-color: #E6ECF8;
+    color: #141c3a;
+    box-shadow: none;
+}
+
+.estilo-input{
+    height: 56px;
+}
+
 
 @media (max-width: 959px) {
     .frontPage{

@@ -1,12 +1,12 @@
 .footer{
     padding-top: 2rem;
-    height: 412px;
+    height: 380px;
     width: 100%;
     background: linear-gradient(#6E07F3, #4b02aab4);
 }
 
 .logo{
-    height: 100px;
+    height: 75px;
 }
 
 .contenedor-logos{
@@ -36,7 +36,7 @@
 
 @media (max-width: 959px) {
     .logo{
-        height: 70px;
+        height: 65px;
     }
 
     .text-subtitulo-footer{

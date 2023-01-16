@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  API_RICKAN_DMORTY: 'https://rickandmortyapi.com/api/',
-	API_NETGRID: 'https://netgrid-api-production.up.railway.app/api/',
+  API_FIREBASE: 'https://bryancometa-com-default-rtdb.firebaseio.com/',
 };
 
 /*

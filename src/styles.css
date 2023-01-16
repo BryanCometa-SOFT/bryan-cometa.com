@@ -4,7 +4,7 @@
 
 html, body { height: 100%; scroll-behavior: inherit; }
 body { margin: 0;}
-a, p, h1, h2, h3, h4, h5, h6, span, b{
+a, p, h1, h2, h3, h4, h5, h6, span, b, label{
     font-family: 'Noto Sans', sans-serif !important; 
 }
 

@@ -1,26 +1,46 @@
-<section class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="mt-5">Gracias por tomarse el tiempo de comunicarse. ¿En que proyecto podemos trabajar?</h1>
+
+<!-- Formulario de contacto -->
+<section class="mt-2 mt-lg-5">
+    <div class="d-flex justify-content-center">
+        <div class="form-contacto">
+            <h2 class="titleSmall">Gracias por tomarse el tiempo ver mi página. ¿En que proyecto podemos trabajar?</h2>
         </div>
-        <form>
-            <div class="form-group ">
-                <label for="inputName" class="col-sm-1-12 col-form-label"></label>
-                <div class="col-sm-1-12">
-                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
-                </div>
+    </div>
+    <div class="container form-contacto">
+
+        <form class="row mt-4" [formGroup]="form">
+            <div class="form-group col-12 col-md-6">
+                <label class="text-section-card" for="txtNombre">Nombre</label>
+                <input type="text" class="form-control estilo-form estilo-input" [class.is-invalid]="nameValid" formControlName="name" aria-describedby="helpId" placeholder="">
+                <small class="text-danger" *ngIf="form.value.name.length < 5">Debe tener al menos 5 letras</small>
+                <small class="text-danger" *ngIf="nameValid">Nombre invalido</small>
+              </div>
+            <div class="form-group col-12 col-md-6 mt-4 mt-lg-0">
+                <label class="text-section-card" for="txtEmail">Email</label>
+                <input type="text" class="form-control estilo-form estilo-input" [class.is-invalid]="emailValid" formControlName="email" aria-describedby="helpId" placeholder="">
+                <small class="text-danger" *ngIf="emailValid">Correo Invalido</small>
             </div>
-            <fieldset class="form-group row">
-                <legend class="col-form-legend col-sm-1-12">Group name</legend>
-                <div class="col-sm-1-12">
-                    
-                </div>
-            </fieldset>
-            <div class="form-group row">
-                <div class="offset-sm-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">Action</button>
-                </div>
+
+            <div class="form-group col-12 mt-4">
+                <label class="text-section-card" for="txtMensaje">Mensaje</label>
+                <textarea class="form-control estilo-form" [class.is-invalid]="descriptionValid" formControlName="description" cols="30" rows="10"></textarea>
+                <small class="text-danger" *ngIf="descriptionValid">Descripción Invalida</small>
             </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                <app-button title="Enviar Información" (outputClick)="saveContact()"></app-button>
+            </div>
+
+
         </form>
     </div>
+
+    <div class="mt-5 text-center">
+      <h4>Datos:</h4>
+      <p>nombre: {{ this.form.value.name}}</p>
+      <p>email: {{ this.form.value.email}}</p>
+      <p>description: {{ this.form.value.description}}</p>
+      <p>Estado:  {{!this.form.invalid}}</p>
+    </div>
 </section>
+

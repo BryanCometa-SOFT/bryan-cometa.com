@@ -1,0 +1,33 @@
+.estilo-form{
+
+    color: #141c3a;
+    box-shadow: none;
+}
+
+.estilo-input{
+    height: 56px;
+}
+
+.titleSmall{
+    color: #141c3a;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 1.25;
+    word-break: break-word;
+}
+
+.form-contacto{
+    width: 50%;
+}
+
+@media (max-width: 959px) {
+    .titleSmall{
+        font-size: 1.25rem;
+    }
+
+    .form-contacto{
+        width: 100%;
+    }
+
+}

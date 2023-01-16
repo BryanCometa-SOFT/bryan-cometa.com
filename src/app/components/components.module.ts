@@ -7,21 +7,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 //Components
 import { NavbarComponent } from './navbar/navbar.component';
-import { TableComponent } from './table/table.component';
 import { ButtonComponent } from './button/button.component';
-import { LogoContainerComponent } from './logo-container/logo-container.component';
-import { CardBriefcaseComponent } from './card-briefcase/card-briefcase.component';
 import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    TableComponent,
     ButtonComponent,
-    LogoContainerComponent,
-    CardBriefcaseComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -30,7 +24,6 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     NavbarComponent,
-    TableComponent,
     ButtonComponent,
     FooterComponent
   ]
