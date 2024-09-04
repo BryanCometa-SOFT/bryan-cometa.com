@@ -4,6 +4,15 @@
     height: 85px;
 }
 
+.nav-style{
+    position: fixed; /* Fija el encabezado en la pantalla */
+    top: 0; /* Posición desde la parte superior de la ventana */
+    left: 0; /* Posición desde el borde izquierdo de la ventana */
+    width: 100%; /* Asegúrate de que el encabezado ocupe todo el ancho */
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade sombra para destacarlo */
+}
+
 
 
 @media (max-width: 959px) {
