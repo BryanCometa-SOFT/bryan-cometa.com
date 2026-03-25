@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './admin/login/login.component';
 import { ContactRequestComponent } from './admin/contact-request/contact-request.component';
+import { FitTimerPrivacyComponent } from './fit-timer-privacy/fit-timer-privacy.component';
 
 /**
  * Components
