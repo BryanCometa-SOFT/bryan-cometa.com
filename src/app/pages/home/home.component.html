@@ -1,165 +1,502 @@
-<section class="row">
-    <div class="col-12">
-        <h1 class="title">Desarrollador Web Frontend &amp; FullStack</h1>
-        <h2 class="subtitle">Transformo ideas en experiencias digitales. Estoy listo para colaborar y llevar tu proyecto al siguiente nivel.</h2>
-
-        <!-- foto de perfil -->
-        <div class="d-flex justify-content-center mt-5">
-            <img class="avatar shadow" src="assets/img/foto-perfil.webp" alt="foto de mí">
+<!-- ===================== HERO ===================== -->
+<section class="hero-section" id="inicio">
+  <div class="container hero-container">
+    <div class="row align-items-center">
+      <!-- Texto izquierdo -->
+      <div class="col-12 col-lg-7 hero-text-col">
+        <span class="badge-disponible">
+          <span class="dot-green"></span> Disponible para proyectos
+        </span>
+        <h1 class="hero-title">
+          Desarrollador Web
+          <span class="gradient-text">Frontend & FullStack</span>
+        </h1>
+        <p class="hero-subtitle">
+          Full-Stack con especialización en <strong>Angular y Vue.js</strong>, microfrontends, APIs REST y CI/CD. Más de 5 años entregando productos digitales escalables en equipos de empresa y como freelancer.
+        </p>
+        <div class="hero-ctas">
+          <a href="#portafolio" class="btn-hero-primary">Ver proyectos</a>
+          <a routerLink="/contacto" class="btn-hero-secondary">Contáctame</a>
         </div>
-
-        <!-- imagen de portada -->
-        <div class="d-flex justify-content-center">
-            <img class="frontPage" src="assets/img/imgportada.webp" alt="imagen de herramientas">
+      </div>
+      <!-- Foto derecha -->
+      <div class="col-12 col-lg-5 hero-img-col">
+        <div class="avatar-wrapper">
+          <img class="avatar-hero shadow" src="assets/img/foto-perfil.webp" alt="Bryan Cometa - Desarrollador Web">
+          <div class="avatar-ring"></div>
         </div>
-
-        <!-- descripción de mí -->
-        <div class="section shadow" id="sobremi">
-            <h2 class="titleSmall subtitle-text-white">Hola, soy Bryan. Encantado de conocerte.</h2>
-            <div class="d-flex justify-content-center">
-                <h2 class="subtitle subtitle-section subtitle-text-white mx-2 mx-lg-0">
-                    Desde que comencé mi carrera como desarrollador web hace más de 5 años,
-                    he tenido la oportunidad de trabajar en diversos proyectos como freelancer y en empresas.
-                    Esta experiencia me ha permitido especializarme tanto en Frontend como en Fullstack, colaborando con equipos y personas excepcionales. Mi enfoque está en la innovación constante, la resolución creativa de problemas y el crecimiento continuo. Mi pasión por la tecnología y mi deseo de superar desafíos me impulsan a buscar siempre nuevas formas de alcanzar y superar mis objetivos.</h2>
-            </div>
-        </div>
-
-        <!-- Card de mis tecnologias -->
-        <div class="row section-card">
-            <!-- Card Frontend-->
-            <div class="card-deck d-lg-flex justify-content-center">
-                <div class="card  col-12 col-sm-12 col-lg-4  mx-lg-5">
-                    <div class="card-body py-5 shadow">
-                        <div class="d-flex justify-content-center">
-                            <div class="icon-section-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                    class="bi bi-code-slash subtitle-text-white icon-card" viewBox="0 0 16 16">
-                                    <path
-                                        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <h2 class="title-section-card mt-4">Frontend</h2>
-                        <h2 class="text-section-card mt-4">Me dedico a transformar conceptos en aplicaciones web interactivas y eficientes. Mi misión es llevar los diseños a la vida real, creando interfaces que no solo sean visualmente atractivas, sino también excepcionalmente funcionales.
-
-                        </h2>
-
-                        <!-- Logos Frontend -->
-                        <h2 class="title-section-card mt-4">Tecnologías</h2>
-                        <div class="row contenedor-logos">
-                            <img class="logo-tecnologia " src="assets/img/tecnologias/angular-logo.webp" alt="logo angular">
-                            <img class="logo-tecnologia" src="assets/img/tecnologias/vuejs.webp" alt="logo vue.js">
-                            <img class="logo-tecnologia " src="assets/img/tecnologias/bootstrap.webp" alt="logo boostrap">
-                            <img class="logo-tecnologia" src="assets/img/tecnologias/ts.webp" alt="logo typescript">
-                            <img class="logo-tecnologia" src="assets/img/tecnologias/html5.webp" alt="logo html5">
-                            <img class="logo-tecnologia " src="assets/img/tecnologias/css3.webp" alt="logo css3">
-                            <img class="logo-tecnologia mt-2" src="assets/img/tecnologias/javascript.webp" alt="logo javascript">
-                        </div>
-                    </div>
-                </div>
-                <!-- Card Backend-->
-                <div class="card col-12 col-sm-12 col-lg-4 mx-lg-5 shadow">
-                    <div class="card-body py-5">
-                        <div class="d-flex justify-content-center">
-                            <div class="icon-section-card">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                    class="bi bi-database subtitle-text-white icon-card" viewBox="0 0 16 16">
-                                    <path
-                                        d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2 class="title-section-card mt-4">Backend</h2>
-                        <h2 class="text-section-card mt-4">Me dedico a construir infraestructuras digitales sólidas y altamente eficientes. Mi compromiso con la calidad garantiza que cada solución no solo cumpla con las expectativas, sino que las supere.
-                        </h2>
-                        <!-- Logos Backend -->
-                        <h2 class="title-section-card mt-4">Tecnologías</h2>
-                        <div class="row contenedor-logos">
-                            <img class="logo-tecnologia " src="assets/img/tecnologias/laravel.webp" alt="logo laravel">
-                            <img class="logo-tecnologia" src="assets/img/tecnologias/php.webp" alt="logo php">
-                            <img class="logo-tecnologia " src="assets/img/tecnologias/mysql.webp" alt="logo mysql">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Herramientas de desarrollo -->
-        <!-- <div class="mt-5">
-            <h2 class="titleSmall py-3">Herramientas</h2>
-
-            <div class="row contenedor-logos mt-2">
-                <img class="logo-tecnologia " src="assets/img/tecnologias/scrum.webp" alt="logo scrum">
-                <img class="logo-tecnologia " src="assets/img/tecnologias/git.webp" alt="logo git">
-                <img class="logo-tecnologia " src="assets/img/tecnologias/github.webp" alt="logo github">
-                <img class="logo-tecnologia " src="assets/img/tecnologias/jira.webp" alt="logo jira">
-                <img class="logo-tecnologia " src="assets/img/tecnologias/confluence.webp" alt="logo confluence">
-                <img class="logo-tecnologia " src="assets/img/tecnologias/vscode.webp" alt="logo vscode">
-            </div>
-
-        </div> -->
-
-        <hr class="mx-5 hrEstilo">
-
-        <!-- Portafolio -->
-        <div class="container">
-            <div class="card-deck row">
-                <h2 class="titleSmall" id="portafolio">Portafolio</h2>
-                <div class="col-12 col-sm-6 col-lg-4 p-3">
-                  <div class="card shadow ">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/img/salvacom.webp" class="imgWeb" alt="imagen salva">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-around">
-                            <app-button title="Visitar"  [isLink]="true" urlLink="https://salva-web.web.app"></app-button>
-                            <app-button title="GitHub" type="black" [isLink]="true" urlLink="https://github.com/BryanCometa-SOFT/salva-web.git"></app-button>
-                        </div>
-                    </div>
-                  </div>
-               </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 p-3">
-                  <div class="card shadow ">
-                    <div class="d-flex justify-content-center">
-                        <img src="assets/img/control-jac.png" class="imgWeb" alt="imagen control jac">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-around">
-                            <app-button title="Visitar"  [isLink]="true" urlLink="https://controljac.com/"></app-button>
-                        </div>
-                    </div>
-                  </div>
-               </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 p-3">
-                    <div class="card shadow ">
-                        <div class="d-flex justify-content-center">
-                            <img src="assets/img/rickmortyweb.webp" class="imgWeb" alt="imagen rickmorty">
-                        </div>
-                        <div class="card-body ">
-                            <div class="d-flex justify-content-around">
-                                <app-button title="GitHub App" type="black" [isLink]="true" urlLink="https://github.com/BryanCometa-SOFT/rickmorty-app"></app-button>
-                                <app-button title="GitHub Api" type="black" [isLink]="true" urlLink="https://github.com/BryanCometa-SOFT/rickmorty-api"></app-button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-4 p-3">
-                  <div class="card shadow ">
-                      <div class="d-flex justify-content-center">
-                          <img src="assets/img/bryancometacom.webp" class="imgWeb" alt="logo bryancometa">
-                      </div>
-                      <div class="card-body ">
-                          <div class="d-flex justify-content-around">
-                              <app-button title="GitHub" type="black" [isLink]="true" urlLink="https://github.com/BryanCometa-SOFT/bryan-cometa.com"></app-button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Proyectos entregados</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Apps publicadas</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Compromiso con el cliente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE MÍ ===================== -->
+<section class="about-section" id="sobremi">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 about-text" data-animate>
+        <p class="about-tag">Sobre mí</p>
+        <h2 class="about-title">Hola, soy Bryan.<br>Encantado de conocerte.</h2>
+        <p class="about-body">
+          Desarrollador Full-Stack con especialización en Frontend y más de <strong>5 años de experiencia</strong> profesional. He liderado el área de Frontend en empresa, implementado microfrontends para integrar funcionalidades en aplicaciones legacy, y construido sistemas con comunicación en tiempo real usando WebSockets.
+        </p>
+        <p class="about-body">
+          Me adapto rápido, trabajo bien en equipo y uso <strong>herramientas de IA generativa</strong> (Claude, Gemini, ChatGPT) para entregar más rápido y con mayor calidad. Manejo el ciclo completo: diseño, desarrollo, despliegue con CI/CD y mantenimiento.
+        </p>
+        <div class="about-chips">
+          <span class="chip">Angular</span>
+          <span class="chip">Vue.js</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Microfrontends</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Laravel</span>
+          <span class="chip">CI/CD</span>
+          <span class="chip">IA Generativa</span>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 about-cards-col">
+        <div class="about-card" data-animate data-delay="1">
+          <div class="about-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="28" height="28">
+              <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="about-card-title">Freelancer & Empresa</h4>
+            <p class="about-card-text">Experiencia trabajando de forma independiente y dentro de equipos de desarrollo con metodologías ágiles.</p>
+          </div>
+        </div>
+        <div class="about-card" data-animate data-delay="2">
+          <div class="about-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="28" height="28">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="about-card-title">Entrega puntual</h4>
+            <p class="about-card-text">Me comprometo con los plazos y mantengo comunicación constante para que siempre sepas el estado de tu proyecto.</p>
+          </div>
+        </div>
+        <div class="about-card" data-animate data-delay="3">
+          <div class="about-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="28" height="28">
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="about-card-title">Código limpio y escalable</h4>
+            <p class="about-card-text">Escribo código mantenible, documentado y estructurado para que tu proyecto pueda crecer sin deuda técnica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section class="services-section" id="servicios">
+  <div class="container">
+    <p class="section-tag text-center" data-animate>¿Qué puedo hacer por ti?</p>
+    <h2 class="section-title text-center" data-animate data-delay="1">Mis Servicios</h2>
+    <p class="section-subtitle text-center" data-animate data-delay="2">Ofrezco soluciones a medida según las necesidades de tu negocio o proyecto personal.</p>
+
+    <div class="row services-grid">
+      <div class="col-12 col-md-6 col-lg-4 p-3" data-animate data-delay="1">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+              <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4v6c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.5 11h11l.515-.001a1.464 1.464 0 0 0 .538-.143.758.758 0 0 0 .302-.254A.858.858 0 0 0 15 10V4a.858.858 0 0 0-.145-.602.758.758 0 0 0-.302-.254A1.464 1.464 0 0 0 14.5 3h-13a1.464 1.464 0 0 0-.538.143l-.564-.998z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Desarrollo Web a Medida</h3>
+          <p class="service-text">Construyo aplicaciones web completas desde cero: landing pages, sistemas internos, e-commerce o SPAs usando Angular, Vue.js y Laravel.</p>
+          <ul class="service-list">
+            <li>Landing pages de alto impacto</li>
+            <li>Sistemas web (SPA/MPA)</li>
+            <li>Integraciones con APIs</li>
+            <li>Paneles de administración</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 p-3" data-animate data-delay="2">
+        <div class="service-card service-card-featured">
+          <div class="service-featured-badge">Más solicitado</div>
+          <div class="service-icon service-icon-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+              <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"/>
+              <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+            </svg>
+          </div>
+          <h3 class="service-title service-title-white">Frontend Profesional</h3>
+          <p class="service-text service-text-white">Desarrollo interfaces modernas, rápidas y responsivas que mejoran la experiencia del usuario y aumentan las conversiones.</p>
+          <ul class="service-list service-list-white">
+            <li>Interfaces responsivas</li>
+            <li>Optimización de rendimiento</li>
+            <li>Animaciones & microinteracciones</li>
+            <li>Angular / Vue.js / Vanilla JS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 p-3" data-animate data-delay="3">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+              <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Backend & APIs</h3>
+          <p class="service-text">Desarrollo APIs REST robustas y bases de datos optimizadas con PHP/Laravel y MySQL para soportar cualquier volumen de datos.</p>
+          <ul class="service-list">
+            <li>APIs REST con Laravel</li>
+            <li>Diseño de base de datos MySQL</li>
+            <li>Autenticación y seguridad</li>
+            <li>Integración con Firebase</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TECNOLOGÍAS ===================== -->
+<section class="skills-section" id="habilidades">
+  <div class="container">
+    <p class="section-tag text-center" data-animate>Stack tecnológico</p>
+    <h2 class="section-title text-center" data-animate data-delay="1">Tecnologías que domino</h2>
+
+    <div class="row skills-grid">
+
+      <!-- Frontend (Especialidad) -->
+      <div class="col-12 col-md-6 p-3" data-animate data-delay="1">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="icon-section-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-code-slash icon-card" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="skill-card-title">Frontend</h3>
+              <span class="skill-badge">Especialidad</span>
+            </div>
+          </div>
+          <p class="skill-card-text">SPAs, microfrontends, Web Components e interfaces de alto rendimiento. Amplia experiencia integrando Angular y Vue.js en aplicaciones de producción.</p>
+          <div class="logos-grid">
+            <div class="logo-item" title="Angular">
+              <img src="assets/img/tecnologias/angular-logo.webp" alt="Angular">
+              <span>Angular</span>
+            </div>
+            <div class="logo-item" title="Vue.js">
+              <img src="assets/img/tecnologias/vuejs.webp" alt="Vue.js">
+              <span>Vue.js</span>
+            </div>
+            <div class="logo-item" title="TypeScript">
+              <img src="assets/img/tecnologias/ts.webp" alt="TypeScript">
+              <span>TypeScript</span>
+            </div>
+            <div class="logo-item" title="JavaScript">
+              <img src="assets/img/tecnologias/javascript.webp" alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+            <div class="logo-item" title="HTML5">
+              <img src="assets/img/tecnologias/html5.webp" alt="HTML5">
+              <span>HTML5</span>
+            </div>
+            <div class="logo-item" title="CSS3">
+              <img src="assets/img/tecnologias/css3.webp" alt="CSS3">
+              <span>CSS3</span>
+            </div>
+            <div class="logo-item" title="Bootstrap">
+              <img src="assets/img/tecnologias/bootstrap.webp" alt="Bootstrap">
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Ionic</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Microfrontends</span>
+            <span class="skill-tag">Web Components</span>
+            <span class="skill-tag">SSR</span>
+            <span class="skill-tag">WebSockets</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend & APIs -->
+      <div class="col-12 col-md-6 p-3">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="icon-section-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-database icon-card" viewBox="0 0 16 16">
+                <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313ZM13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 5.698ZM14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13V4Zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A4.92 4.92 0 0 0 13 8.698Zm0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525Z" />
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Backend & APIs</h3>
+          </div>
+          <p class="skill-card-text">APIs REST robustas, bases de datos relacionales y servicios en tiempo real. Integración de Webhooks, Redis y colas para arquitecturas escalables.</p>
+          <div class="logos-grid">
+            <div class="logo-item" title="Laravel">
+              <img src="assets/img/tecnologias/laravel.webp" alt="Laravel">
+              <span>Laravel</span>
+            </div>
+            <div class="logo-item" title="PHP">
+              <img src="assets/img/tecnologias/php.webp" alt="PHP">
+              <span>PHP</span>
+            </div>
+            <div class="logo-item" title="MySQL">
+              <img src="assets/img/tecnologias/mysql.webp" alt="MySQL">
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">WebSockets</span>
+            <span class="skill-tag">Webhooks</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps & CI/CD -->
+      <div class="col-12 col-md-6 p-3">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="icon-section-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon-card" viewBox="0 0 16 16">
+                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">DevOps & CI/CD</h3>
+          </div>
+          <p class="skill-card-text">Control de versiones, pipelines de despliegue automatizado y administración básica de servidores Linux con Nginx y VPS.</p>
+          <div class="logos-grid">
+            <div class="logo-item" title="Git">
+              <img src="assets/img/tecnologias/git.webp" alt="Git">
+              <span>Git</span>
+            </div>
+            <div class="logo-item" title="GitHub">
+              <img src="assets/img/tecnologias/github.webp" alt="GitHub">
+              <span>GitHub</span>
+            </div>
+            <div class="logo-item" title="Scrum">
+              <img src="assets/img/tecnologias/scrum.webp" alt="Scrum">
+              <span>Scrum</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">GitLab</span>
+            <span class="skill-tag">Linux (Ubuntu)</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">VPS</span>
+            <span class="skill-tag">Pipelines</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Herramientas & IA -->
+      <div class="col-12 col-md-6 p-3">
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="icon-section-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon-card" viewBox="0 0 16 16">
+                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.134Z"/>
+                <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866Z"/>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">IA & Herramientas</h3>
+          </div>
+          <p class="skill-card-text">Uso activo de IA generativa para acelerar el desarrollo. Gestión de proyectos con metodologías ágiles y herramientas de colaboración profesionales.</p>
+          <div class="logos-grid">
+            <div class="logo-item" title="Jira">
+              <img src="assets/img/tecnologias/jira.webp" alt="Jira">
+              <span>Jira</span>
+            </div>
+            <div class="logo-item" title="Confluence">
+              <img src="assets/img/tecnologias/confluence.webp" alt="Confluence">
+              <span>Confluence</span>
+            </div>
+            <div class="logo-item" title="VS Code">
+              <img src="assets/img/tecnologias/vscode.webp" alt="VS Code">
+              <span>VS Code</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Claude AI</span>
+            <span class="skill-tag">Gemini</span>
+            <span class="skill-tag">ChatGPT</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTAFOLIO ===================== -->
+<section class="portfolio-section" id="portafolio">
+  <div class="container">
+    <p class="section-tag text-center">Trabajo real</p>
+    <h2 class="section-title text-center">Proyectos destacados</h2>
+    <p class="section-subtitle text-center">Una selección de proyectos en los que he trabajado como freelancer y por cuenta propia.</p>
+
+    <div class="row portfolio-grid">
+      <!-- Proyecto 1: Salva -->
+      <div class="col-12 col-sm-6 col-lg-4 p-3">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/img/salvacom.webp" class="project-img" alt="Salva Web App">
+            <div class="project-overlay">
+              <a href="https://salva-web.web.app" target="_blank" class="overlay-btn">Ver sitio</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Salva</h3>
+            <p class="project-desc">Aplicación web completa con panel de administración, gestión de datos y diseño responsivo orientado al usuario final.</p>
+            <div class="project-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://salva-web.web.app" target="_blank" class="project-link-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="14" height="14"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>
+                Ver sitio
+              </a>
+              <a href="https://github.com/BryanCometa-SOFT/salva-web.git" target="_blank" class="project-link-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="14" height="14"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2: Control JAC -->
+      <div class="col-12 col-sm-6 col-lg-4 p-3">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/img/control-jac.png" class="project-img" alt="Control JAC">
+            <div class="project-overlay">
+              <a href="https://controljac.com/" target="_blank" class="overlay-btn">Ver sitio</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Control JAC</h3>
+            <p class="project-desc">Sistema web para la gestión y control de procesos internos. Aplicación de producción en uso activo por el cliente.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://controljac.com/" target="_blank" class="project-link-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="14" height="14"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>
+                Ver sitio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3: Rick & Morty -->
+      <div class="col-12 col-sm-6 col-lg-4 p-3">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/img/rickmortyweb.webp" class="project-img" alt="Rick & Morty App">
+            <div class="project-overlay">
+              <a href="https://github.com/BryanCometa-SOFT/rickmorty-app" target="_blank" class="overlay-btn">Ver código</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Rick & Morty App</h3>
+            <p class="project-desc">Aplicación fullstack con consumo de API propia. Frontend Angular consumiendo API REST desarrollada en Node/Express.</p>
+            <div class="project-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">API REST</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/BryanCometa-SOFT/rickmorty-app" target="_blank" class="project-link-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="14" height="14"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                App
+              </a>
+              <a href="https://github.com/BryanCometa-SOFT/rickmorty-api" target="_blank" class="project-link-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="14" height="14"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                API
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 4: Portfolio -->
+      <div class="col-12 col-sm-6 col-lg-4 p-3">
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="assets/img/bryancometacom.webp" class="project-img" alt="Bryan Cometa Portfolio">
+            <div class="project-overlay">
+              <a href="https://github.com/BryanCometa-SOFT/bryan-cometa.com" target="_blank" class="overlay-btn">Ver código</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Bryan Cometa — Portfolio</h3>
+            <p class="project-desc">Este mismo sitio web. Construido con Angular 15, integración con Firebase para el formulario de contacto y despliegue en Firebase Hosting.</p>
+            <div class="project-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">TypeScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/BryanCometa-SOFT/bryan-cometa.com" target="_blank" class="project-link-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="14" height="14"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <h2 class="cta-title">¿Tienes un proyecto en mente?</h2>
+      <p class="cta-text">Cuéntame sobre tu idea y trabajemos juntos para hacerla realidad. Respondo en menos de 24 horas.</p>
+      <a routerLink="/contacto" class="btn-cta">Hablemos ahora</a>
+    </div>
+  </div>
 </section>

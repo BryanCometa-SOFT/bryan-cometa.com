@@ -1,18 +1,30 @@
 <nav class="navbar nav-style navbar-white navbar-expand-lg bg-white">
-    <div class="container-fluid">
-      <a href="/home">
+    <div class="container-fluid px-3 px-lg-4">
+      <a href="/">
         <img src="assets/img/logo-bryan-negro-removebg-preview.webp" class="icon" alt="logo bryan cometa">
       </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 nav-links">
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#sobremi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link-custom" href="#portafolio">Portafolio</a>
+          </li>
         </ul>
-        <app-button title="Inicio" type="normal" [isLink]="true" urlLink="/inicio"></app-button>
-        <app-button class="d-block d-lg-none" title="Contactame" type="normal" [isLink]="true" urlLink="/contacto"></app-button>
-        <app-button class="d-none d-lg-block" title="Contactame" [isLink]="true" urlLink="/contacto"></app-button>
+        <a class="btn-nav-contact d-block d-lg-none mt-2 mb-2" routerLink="/contacto">Contáctame</a>
+        <a class="btn-nav-contact d-none d-lg-block" routerLink="/contacto">Contáctame</a>
       </div>
     </div>
   </nav>
