@@ -99,6 +99,50 @@
 [data-animate][data-delay="3"] { transition-delay: 0.3s; }
 [data-animate][data-delay="4"] { transition-delay: 0.4s; }
 
+/* Slide desde izquierda */
+[data-animate-left] {
+    opacity: 0;
+    transform: translateX(-36px);
+    transition:
+        opacity 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-animate-left].is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide desde derecha */
+[data-animate-right] {
+    opacity: 0;
+    transform: translateX(36px);
+    transition:
+        opacity 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+[data-animate-right].is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Delays para slide lateral */
+[data-animate-left][data-delay="1"],
+[data-animate-right][data-delay="1"] { transition-delay: 0.1s; }
+[data-animate-left][data-delay="2"],
+[data-animate-right][data-delay="2"] { transition-delay: 0.2s; }
+[data-animate-left][data-delay="3"],
+[data-animate-right][data-delay="3"] { transition-delay: 0.3s; }
+
+/* En móvil, los slides laterales se convierten en fadeUp para evitar overflow */
+@media (max-width: 768px) {
+    [data-animate-left],
+    [data-animate-right] {
+        transform: translateY(24px);
+    }
+}
+
 /* =============================================
    HERO SECTION
    ============================================= */

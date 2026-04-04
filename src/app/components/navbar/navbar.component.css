@@ -1,3 +1,15 @@
+/* Barra de progreso de scroll */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #6E07F3, #a855f7);
+    z-index: 1001;
+    transition: width 0.1s linear;
+    border-radius: 0 2px 2px 0;
+}
+
 .icon {
     height: 56px;
 }
@@ -10,6 +22,11 @@
     z-index: 1000;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0,0,0,0.06);
+    transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-style.scrolled {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 .nav-links {
