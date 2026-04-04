@@ -1,21 +1,22 @@
-//Modules
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactComponent } from './contact/contact.component';
-import { FitTimerPrivacyComponent } from './fit-timer-privacy/fit-timer-privacy.component';
-
-//Components
-import { HomeComponent } from './home/home.component';
-
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: '', component: HomeComponent },
-      { path: 'contacto', component: ContactComponent },
-      { path: 'fittimer-privacy', component: FitTimerPrivacyComponent },
-      
+      {
+        path: '',
+        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'contacto',
+        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+      },
+      {
+        path: 'fittimer-privacy',
+        loadChildren: () => import('./fit-timer-privacy/fit-timer-privacy.module').then(m => m.FitTimerPrivacyModule)
+      },
       { path: '**', redirectTo: '' }
     ]
   }
@@ -23,8 +24,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-
-
-exports: [RouterModule]
+  exports: [RouterModule]
 })
 export class PagesRoutingModule { }

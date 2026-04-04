@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx ng:*)",
+      "Bash(npx webpack-bundle-analyzer:*)",
+      "Bash(open /tmp/bundle-report.html)",
+      "Bash(ls -lh /Users/razor/Documents/projects/bryan-cometa.com/node_modules/sweetalert2/dist/*.js)",
+      "Bash(head -5 ls -lh /Users/razor/Documents/projects/bryan-cometa.com/node_modules/bootstrap/dist/js/*.js)",
+      "Bash(head -5 ls -lh /Users/razor/Documents/projects/bryan-cometa.com/node_modules/animate.css/*.css)"
+    ]
+  }
+}
