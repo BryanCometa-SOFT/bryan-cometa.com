@@ -1,5 +1,5 @@
 .icon {
-    height: 72px;
+    height: 56px;
 }
 
 .nav-style {
@@ -51,7 +51,7 @@
 
 @media (max-width: 991px) {
     .icon {
-        height: 60px;
+        height: 46px;
     }
 
     /* Menú desplegado */
