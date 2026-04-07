@@ -270,6 +270,8 @@
     object-fit: cover;
     position: relative;
     z-index: 2;
+    filter: saturate(1.15) contrast(1.03) brightness(1.04);
+    box-shadow: 0 0 20px 4px rgba(110, 7, 243, 0.2), 0 0 40px 8px rgba(110, 7, 243, 0.08);
 }
 
 .avatar-ring {
